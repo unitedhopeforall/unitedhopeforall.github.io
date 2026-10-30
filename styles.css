@@ -343,31 +343,125 @@ section { padding: 90px 0; }
   color: var(--blue-soft);
 }
 
-/* ---------- bake sale ---------- */
+/* ---------- bake sale (Halloween theme, this section only) ---------- */
+.bake-sale {
+  --night: #2A2145;
+  --pumpkin: #F08A3C;
+  --pumpkin-deep: #7F3705;
+  --lavender: #CDC1EC;
+  --lavender-light: #E2DAF6;
+  --ghost: #F4F0FF;
+  position: relative;
+  overflow: hidden;
+  background: var(--night);
+  color: var(--ghost);
+}
+
+.bake-sale .section-title { color: var(--ghost); }
+
+.bake-sale .eyebrow { color: var(--pumpkin); }
+
+.bake-sale a:focus-visible,
+.bake-sale button:focus-visible { outline-color: var(--pumpkin); }
+
+.halloween-content {
+  position: relative;
+  z-index: 1;
+}
+
+.halloween-decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.halloween-decor svg { position: absolute; }
+
+.halloween-web {
+  top: 0;
+  width: 220px;
+  height: 220px;
+  color: var(--ghost);
+  opacity: 0.16;
+}
+
+.halloween-web-left { left: 0; }
+
+.halloween-web-right { right: 0; transform: scaleX(-1); }
+
+.halloween-bat { color: #5A4B8A; }
+
+.halloween-bat-1 { top: 64px; right: 24%; width: 76px; transform: rotate(-8deg); }
+
+.halloween-bat-2 { top: 140px; right: 12%; width: 48px; transform: rotate(10deg); }
+
+.halloween-ghost {
+  bottom: 28px;
+  left: 3%;
+  width: 56px;
+  color: var(--ghost);
+  opacity: 0.85;
+}
+
+.halloween-pumpkin {
+  right: 3%;
+  bottom: 24px;
+  width: 84px;
+  color: var(--pumpkin);
+}
+
 .event-card {
-  background: var(--white);
+  max-width: 760px;
+  margin: 28px auto 0;
+  background: var(--lavender);
+  color: var(--night);
   border-radius: var(--radius);
-  padding: 40px;
-  box-shadow: 0 8px 24px rgba(46, 109, 180, 0.12);
+  padding: 24px 28px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-card a {
+  color: var(--pumpkin-deep);
+  font-weight: 700;
+}
+
+.event-card a:focus-visible { outline-color: var(--night); }
+
+.treat-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.treat-list li {
+  background: var(--lavender-light);
+  color: var(--night);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .event-detail {
   display: flex;
   gap: 14px;
-  margin-bottom: 12px;
-  font-size: 1.05rem;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
 }
 
 .event-label {
-  color: var(--blue-primary);
+  color: var(--pumpkin-deep);
   font-weight: 700;
-  min-width: 70px;
+  flex: 0 0 70px;
 }
 
 .event-blurb {
-  margin-top: 20px;
-  color: var(--blue-soft);
-  font-size: 1.02rem;
+  margin: 14px 0 0;
+  color: var(--night);
+  font-size: 0.95rem;
 }
 
 .photo-carousel {
@@ -375,7 +469,7 @@ section { padding: 90px 0; }
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 14px;
 }
 
 .photo-track {
@@ -383,7 +477,7 @@ section { padding: 90px 0; }
   flex-direction: row;
   gap: 18px;
   overflow-x: auto;
-  padding: 8px 4px 16px;
+  padding: 14px 4px 18px;
   scrollbar-width: none;
 }
 
@@ -391,11 +485,11 @@ section { padding: 90px 0; }
 
 .photo-item {
   flex: 0 0 auto;
-  height: 180px;
-  width: 240px;
+  height: 280px;
+  width: 420px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(46, 109, 180, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
@@ -404,21 +498,6 @@ section { padding: 90px 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.photo-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: var(--blue-pale);
-  color: var(--blue-primary);
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.3rem;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 
 .photo-item.is-hovered { transform: scale(1.08); }
@@ -434,8 +513,8 @@ section { padding: 90px 0; }
   height: 44px;
   border-radius: 999px;
   background: transparent;
-  color: var(--blue-deep);
-  border: 1.5px solid var(--blue-soft);
+  color: var(--ghost);
+  border: 1.5px solid var(--pumpkin);
   font-size: 1.4rem;
   line-height: 1;
   cursor: pointer;
@@ -443,8 +522,8 @@ section { padding: 90px 0; }
 }
 
 .carousel-arrow:hover {
-  border-color: var(--blue-primary);
-  color: var(--blue-primary);
+  border-color: var(--ghost);
+  color: var(--pumpkin);
   transform: translateY(-1px);
 }
 
@@ -770,6 +849,9 @@ a:focus-visible, button:focus-visible {
   .split { grid-template-columns: 1fr; gap: 32px; }
   .split-photo-first .photo-frame { order: 0; }
   .photo-frame { max-width: 420px; }
-  .event-card { padding: 28px; }
+  .event-card { padding: 20px 22px; }
+  .photo-item { height: 180px; width: 240px; }
+  .halloween-web { width: 120px; height: 120px; }
+  .halloween-bat, .halloween-ghost, .halloween-pumpkin { display: none; }
   .footer-inner { flex-direction: column; }
 }

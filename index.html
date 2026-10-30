@@ -115,32 +115,71 @@
   </section>
 
   <section class="bake-sale" id="bake-sale">
-    <div class="container">
-      <h2 class="section-title">The bake sale</h2>
-      <div class="event-card reveal">
-        <div class="event-detail"><span class="event-label">When</span><span>Coming soon</span></div>
-        <div class="event-detail"><span class="event-label">Where</span><span>Logos International Academy</span></div>
-        <p class="event-blurb">Every treat you buy goes straight to girls' education. Cash and card both work. Come hungry — leave knowing your cookie did something.</p>
-      </div>
+    <div class="halloween-decor" aria-hidden="true">
+      <svg class="halloween-web halloween-web-left" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 200 12M0 0 170 90M0 0 110 150M0 0 40 195"/>
+        <path d="M60 4Q58 26 51 27Q42 42 33 49Q24 54 12 58"/>
+        <path d="M120 7Q114 40 102 54Q84 84 66 90Q46 110 24 117"/>
+        <path d="M180 11Q168 56 153 81Q124 124 99 135Q68 164 36 176"/>
+      </svg>
+      <svg class="halloween-web halloween-web-right" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 200 12M0 0 170 90M0 0 110 150M0 0 40 195"/>
+        <path d="M60 4Q58 26 51 27Q42 42 33 49Q24 54 12 58"/>
+        <path d="M120 7Q114 40 102 54Q84 84 66 90Q46 110 24 117"/>
+        <path d="M180 11Q168 56 153 81Q124 124 99 135Q68 164 36 176"/>
+      </svg>
+      <svg class="halloween-bat halloween-bat-1" viewBox="0 0 64 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 9 29 3 27 9C21 9 18 6 17 1 14 7 7 9 0 7 5 12 7 20 7 28 11 24 15 24 18 27 21 24 25 25 27 29L32 33 37 29C39 25 43 24 46 27 49 24 53 24 57 28 57 20 59 12 64 7 57 9 50 7 47 1 46 6 43 9 37 9L35 3Z"/>
+      </svg>
+      <svg class="halloween-bat halloween-bat-2" viewBox="0 0 64 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 9 29 3 27 9C21 9 18 6 17 1 14 7 7 9 0 7 5 12 7 20 7 28 11 24 15 24 18 27 21 24 25 25 27 29L32 33 37 29C39 25 43 24 46 27 49 24 53 24 57 28 57 20 59 12 64 7 57 9 50 7 47 1 46 6 43 9 37 9L35 3Z"/>
+      </svg>
+      <svg class="halloween-ghost" viewBox="0 0 60 72" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M30 2C14 2 4 14 4 30V70L14 62 22 70 30 62 38 70 46 62 56 70V30C56 14 46 2 30 2Z"/>
+        <circle cx="21" cy="28" r="4" fill="var(--night)"/>
+        <circle cx="39" cy="28" r="4" fill="var(--night)"/>
+        <ellipse cx="30" cy="42" rx="4" ry="6" fill="var(--night)"/>
+      </svg>
+      <svg class="halloween-pumpkin" viewBox="0 0 80 72" xmlns="http://www.w3.org/2000/svg">
+        <path d="M36 16C36 8 40 4 46 2L50 8C45 9 44 12 44 16Z" fill="#7FB069"/>
+        <ellipse cx="22" cy="42" rx="20" ry="27" fill="currentColor"/>
+        <ellipse cx="58" cy="42" rx="20" ry="27" fill="currentColor"/>
+        <ellipse cx="40" cy="42" rx="20" ry="29" fill="#FFB27A"/>
+        <path d="M22 34 31 34 26.5 26ZM49 34 58 34 53.5 26Z" fill="var(--night)"/>
+        <path d="M22 46C28 58 52 58 58 46L50 50 46 46 40 51 34 46 30 50Z" fill="var(--night)"/>
+      </svg>
+    </div>
 
+    <div class="container halloween-content">
+      <p class="eyebrow">Happy Halloween</p>
+      <h2 class="section-title">The Halloween bake sale</h2>
       <div class="photo-carousel reveal">
         <button type="button" class="carousel-arrow carousel-arrow-prev" aria-label="Previous photo">&#8249;</button>
         <div class="photo-track">
-          <!-- Real bake sale photos — restore when available, remove the placeholder items below.
-          <div class="photo-item"><img src="images/bakesale-1.jpeg" alt="Bake sale photo 1" loading="lazy"></div>
-          <div class="photo-item"><img src="images/bakesale-2.jpeg" alt="Bake sale photo 2" loading="lazy"></div>
-          <div class="photo-item"><img src="images/bakesale-3.jpeg" alt="Bake sale photo 3" loading="lazy"></div>
-          <div class="photo-item"><img src="images/bakesale-4.jpeg" alt="Bake sale photo 4" loading="lazy"></div>
-          <div class="photo-item"><img src="images/bakesale-5.jpeg" alt="Bake sale photo 5" loading="lazy"></div>
-          -->
-          <div class="photo-item"><div class="photo-placeholder">COMING SOON</div></div>
-          <div class="photo-item"><div class="photo-placeholder">COMING SOON</div></div>
-          <div class="photo-item"><div class="photo-placeholder">COMING SOON</div></div>
-          <div class="photo-item"><div class="photo-placeholder">COMING SOON</div></div>
-          <div class="photo-item"><div class="photo-placeholder">COMING SOON</div></div>
-          <div class="photo-item"><div class="photo-placeholder">COMING SOON</div></div>
+          <div class="photo-item"><img src="images/halloween-1.jpeg" alt="Plates of cookies and banana bread on a table draped in black spiderweb netting" loading="lazy"></div>
+          <div class="photo-item"><img src="images/halloween-2.jpeg" alt="Spider cookies with chocolate bodies, drizzled legs and candy eyes on pink plates" loading="lazy"></div>
+          <div class="photo-item"><img src="images/halloween-3.jpeg" alt="The treat table with a box of doughnuts, chocolate muffins and decorated brownies" loading="lazy"></div>
+          <div class="photo-item"><img src="images/halloween-4.jpeg" alt="A box of doughnuts, including pumpkin faces in orange icing and skeleton faces in dark icing" loading="lazy"></div>
+          <div class="photo-item"><img src="images/halloween-5.jpeg" alt="Bat brownies with Oreo wings and white chocolate eyes" loading="lazy"></div>
+          <div class="photo-item"><img src="images/halloween-6.jpeg" alt="Chocolate muffins beside brownies topped with Oreo wings and gummy worms" loading="lazy"></div>
+          <div class="photo-item"><img src="images/halloween-7.jpeg" alt="The printed sale menu listing cookies, brownies and banana bread, with the treat table behind it" loading="lazy"></div>
         </div>
         <button type="button" class="carousel-arrow carousel-arrow-next" aria-label="Next photo">&#8250;</button>
+      </div>
+
+      <div class="event-card reveal">
+        <div class="event-detail"><span class="event-label">When</span><span>October 30, 2026, during school hours</span></div>
+        <div class="event-detail"><span class="event-label">Where</span><span>Logos International Academy, for students and school personnel</span></div>
+        <div class="event-detail"><span class="event-label">With</span><span>In collaboration with Lancho Bakery</span></div>
+        <div class="event-detail"><span class="event-label">Raised</span><span>The final total goes on the <a href="#donate">donation tracker</a> once it's counted</span></div>
+        <ul class="treat-list">
+          <li>Creepy Crawly Cookies</li>
+          <li>Spiderweb S'mores Cookies</li>
+          <li>Graveyard Brownies</li>
+          <li>Bat Bite Brownies</li>
+          <li>Boo-nana Bread</li>
+        </ul>
+        <p class="event-blurb">All profits go to the Malala Fund from United Hope For All. Thank you for contributing to the good cause.</p>
       </div>
     </div>
   </section>
