@@ -7,5 +7,7 @@
 // source must be either "bake-sale" or "donation"
 const DONATIONS_DATA = {
   goal: 500,
-  entries: []
+  entries: [
+    { source: "bake-sale", amount: 151, label: "Halloween bake sale", date: "2026-10-30" }
+  ]
 };
